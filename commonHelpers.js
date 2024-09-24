@@ -4,10 +4,10 @@
     <td class="table-text">${n.phone}</td>
     <td class="table-text">${n.email}</td>
     <td class="table-text">${n.country}</td>
-    <td class="table-text status">${n.status}</td>
+    <td class="table-text status"><span class="status-block">${n.status}</span></td>
   `,r.appendChild(o);const a=document.createElement("tr");a.innerHTML=`
   <td colspan="6">
     <div class="linerow"></div>
   </td>
-`,r.appendChild(a)});const d=document.querySelectorAll(".status");d.forEach(n=>{n.textContent==="Active"?n.classList.add("active"):n.classList.add("inactive")});(()=>{const n=document.querySelector(".js-menu-container"),o=document.querySelector(".js-open-menu"),a=document.querySelector(".js-close-menu"),c=document.querySelectorAll(".link"),e=()=>{const t=o.getAttribute("aria-expanded")==="true"||!1;o.setAttribute("aria-expanded",!t),n.classList.toggle("is-open")};o.addEventListener("click",e),a.addEventListener("click",e),c.forEach(t=>{t.addEventListener("click",e)}),window.matchMedia("(min-width: 1440px)").addEventListener("change",t=>{t.matches&&(n.classList.remove("is-open"),o.setAttribute("aria-expanded",!1))})})();const i=document.querySelectorAll(".menu-link");i.forEach(n=>{n.addEventListener("click",o=>{o.preventDefault(),i.forEach(a=>a.classList.remove("current")),(void 0).classList.add("current")})});
+`,r.appendChild(a)});const d=document.querySelectorAll(".status-block");d.forEach(n=>{n.textContent==="Active"?n.classList.add("active"):n.classList.add("inactive")});(()=>{const n=document.querySelector(".js-menu-container"),o=document.querySelector(".js-open-menu"),a=document.querySelector(".js-close-menu"),c=document.querySelectorAll(".link"),e=()=>{const t=o.getAttribute("aria-expanded")==="true"||!1;o.setAttribute("aria-expanded",!t),n.classList.toggle("is-open")};o.addEventListener("click",e),a.addEventListener("click",e),c.forEach(t=>{t.addEventListener("click",e)}),window.matchMedia("(min-width: 1440px)").addEventListener("change",t=>{t.matches&&(n.classList.remove("is-open"),o.setAttribute("aria-expanded",!1))})})();const i=document.querySelectorAll(".menu-link");i.forEach(n=>{n.addEventListener("click",o=>{o.preventDefault(),i.forEach(a=>a.classList.remove("current")),(void 0).classList.add("current")})});
 //# sourceMappingURL=commonHelpers.js.map
