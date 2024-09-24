@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/crm-dashboard-customers/commonHelpers.js"></script>
-    <link rel="stylesheet" crossorigin href="/crm-dashboard-customers/assets/index-9oMZDljP.css">
+    <link rel="stylesheet" crossorigin href="/crm-dashboard-customers/assets/index-DC2UrckR.css">
   </head>
   <body class="page">
     <aside class="sidebar js-menu" id="sidebar-menu">
@@ -135,8 +135,8 @@
 
   <div class="user-wrap">
     <img
-      srcset="/img/Ellipse 8@1x.png, /img/Ellipse 8@2x.png"
-      src="/crm-dashboard-customers/assets/Ellipse%208@1x-JDWmDq41.png"
+      srcset="/crm-dashboard-customers/assets/user@1x-JDWmDq41.png, /crm-dashboard-customers/assets/user@2x-PY84grZN.png"
+      src="/crm-dashboard-customers/assets/user@1x-JDWmDq41.png"
       alt="user photo"
       class="user-photo-img"
       width="42"
@@ -174,7 +174,7 @@
         <th class="table-head">Phone Number</th>
         <th class="table-head">Email</th>
         <th class="table-head">Country</th>
-        <th class="table-head">Status</th>
+        <th class="table-head status">Status</th>
       </tr>
     </thead>
 
@@ -187,7 +187,25 @@
     </tbody>
   </table>
 
-  <p class="show-data">Showing data 1 to 8 of 256K entries</p>
+  <div class="pagination-wrap">
+    <p class="show-data">Showing data 1 to 8 of 256K entries</p>
+    <div class="pagination">
+  <button class="pagination-btn" id="prev-btn">&lt;</button>
+
+  <button class="pagination-page active" data-page="1">1</button>
+  <button class="pagination-page" data-page="2">2</button>
+  <button class="pagination-page" data-page="3">3</button>
+  <button class="pagination-page" data-page="4">4</button>
+
+  <span class="pagination-dots">...</span>
+
+  <button class="pagination-page" data-page="40">40</button>
+
+  <button class="pagination-btn" id="next-btn">&gt;</button>
+</div>
+
+    <script src="/js/pagination.js"></script>
+  </div>
 </div>
 
     </main>
