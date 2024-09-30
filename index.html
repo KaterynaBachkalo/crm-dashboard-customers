@@ -141,63 +141,63 @@
   </aside>
 </div>
 
-    <main class="main">
-      <div class="container">
-  <div class="mobile-header">
-    <button
-      class="burger-menu-btn js-menu-open"
-      type="button"
-      aria-expanded="false"
-      aria-controls="sidebar-menu"
-    >
-      <svg class="burger-menu-btn-icon" width="24" height="24">
-        <use href="/crm-dashboard-customers/assets/sprite-C4zdctQ_.svg#icon-menu"></use>
-      </svg>
-    </button>
+    <div class="container">
+      <header class="mobile-header">
+  <button
+    class="burger-menu-btn js-menu-open"
+    type="button"
+    aria-expanded="false"
+    aria-controls="sidebar-menu"
+  >
+    <svg class="burger-menu-btn-icon" width="24" height="24">
+      <use href="/crm-dashboard-customers/assets/sprite-C4zdctQ_.svg#icon-menu"></use>
+    </svg>
+  </button>
 
-    <h2 class="greeting">Hello Evano 👋🏼,</h2>
-  </div>
+  <h2 class="greeting">Hello Evano 👋🏼,</h2>
+</header>
 
-  <div class="table-wrap">
-    <div class="table-data">
-      <div class="title-wrap">
-        <div>
-          <h3 class="title">All Customers</h3>
-          <p class="subtitle">Active Members</p>
-        </div>
-        <label class="label">
-          <svg class="input-icon" width="24px" height="24px">
-            <use href="/crm-dashboard-customers/assets/sprite-C4zdctQ_.svg#icon-search"></use>
-          </svg>
-
-          <input class="input" type="text" placeholder="Search" />
-        </label>
+      <main class="main">
+        <section class="table-wrap">
+  <div class="table-data">
+    <div class="title-wrap">
+      <div>
+        <h3 class="title">All Customers</h3>
+        <p class="subtitle">Active Members</p>
       </div>
+      <label class="label">
+        <svg class="input-icon" width="24px" height="24px">
+          <use href="/crm-dashboard-customers/assets/sprite-C4zdctQ_.svg#icon-search"></use>
+        </svg>
 
-      <table class="table">
-        <thead>
-          <tr>
-            <th class="table-head">Customer Name</th>
-            <th class="table-head">Company</th>
-            <th class="table-head">Phone Number</th>
-            <th class="table-head">Email</th>
-            <th class="table-head">Country</th>
-            <th class="table-head status">Status</th>
-          </tr>
-        </thead>
+        <input class="input" type="text" placeholder="Search" />
+      </label>
+    </div>
 
-        <tbody>
-          <tr>
-            <td colspan="6">
-              <div class="line"></div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="table-head">Customer Name</th>
+          <th class="table-head">Company</th>
+          <th class="table-head">Phone Number</th>
+          <th class="table-head">Email</th>
+          <th class="table-head">Country</th>
+          <th class="table-head status">Status</th>
+        </tr>
+      </thead>
 
-      <div class="pagination-wrap">
-        <p class="show-data">Showing data 1 to 8 of 256K entries</p>
-        <div class="pagination">
+      <tbody>
+        <tr>
+          <td colspan="6">
+            <div class="line"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pagination-wrap">
+      <p class="show-data">Showing data 1 to 8 of 256K entries</p>
+      <div class="pagination">
   <button class="pagination-btn" id="prev-btn">&lt;</button>
 
   <button class="pagination-page active" data-page="1">1</button>
@@ -212,13 +212,13 @@
   <button class="pagination-btn" id="next-btn">&gt;</button>
 </div>
 
-        <script src="/js/pagination.js"></script>
-      </div>
+      <script src="/js/pagination.js"></script>
     </div>
   </div>
-</div>
+</section>
 
-    </main>
+      </main>
+    </div>
 
   </body>
 </html>
