@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/crm-dashboard-customers/commonHelpers.js"></script>
-    <link rel="stylesheet" crossorigin href="/crm-dashboard-customers/assets/index-BuNo4wIZ.css">
+    <link rel="stylesheet" crossorigin href="/crm-dashboard-customers/assets/index-Dpy3BT4U.css">
   </head>
   <body class="page">
     <div class="sidebar-container">
@@ -158,45 +158,46 @@
     <h2 class="greeting">Hello Evano 👋🏼,</h2>
   </div>
 
-  <div class="table-data">
-    <div class="title-wrap">
-      <div>
-        <h3 class="title">All Customers</h3>
-        <p class="subtitle">Active Members</p>
+  <div class="table-wrap">
+    <div class="table-data">
+      <div class="title-wrap">
+        <div>
+          <h3 class="title">All Customers</h3>
+          <p class="subtitle">Active Members</p>
+        </div>
+        <label class="label">
+          <svg class="input-icon" width="24px" height="24px">
+            <use href="/crm-dashboard-customers/assets/sprite-C4zdctQ_.svg#icon-search"></use>
+          </svg>
+
+          <input class="input" type="text" placeholder="Search" />
+        </label>
       </div>
-      <label class="label">
-        <svg class="input-icon" width="24px" height="24px">
-          <use href="/crm-dashboard-customers/assets/sprite-C4zdctQ_.svg#icon-search"></use>
-        </svg>
 
-        <input class="input" type="text" placeholder="Search" />
-      </label>
-    </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="table-head">Customer Name</th>
+            <th class="table-head">Company</th>
+            <th class="table-head">Phone Number</th>
+            <th class="table-head">Email</th>
+            <th class="table-head">Country</th>
+            <th class="table-head status">Status</th>
+          </tr>
+        </thead>
 
-    <table class="table">
-      <thead>
-        <tr>
-          <th class="table-head">Customer Name</th>
-          <th class="table-head">Company</th>
-          <th class="table-head">Phone Number</th>
-          <th class="table-head">Email</th>
-          <th class="table-head">Country</th>
-          <th class="table-head status">Status</th>
-        </tr>
-      </thead>
+        <tbody>
+          <tr>
+            <td colspan="6">
+              <div class="line"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-      <tbody>
-        <tr>
-          <td colspan="6">
-            <div class="line"></div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="pagination-wrap">
-      <p class="show-data">Showing data 1 to 8 of 256K entries</p>
-      <div class="pagination">
+      <div class="pagination-wrap">
+        <p class="show-data">Showing data 1 to 8 of 256K entries</p>
+        <div class="pagination">
   <button class="pagination-btn" id="prev-btn">&lt;</button>
 
   <button class="pagination-page active" data-page="1">1</button>
@@ -211,7 +212,8 @@
   <button class="pagination-btn" id="next-btn">&gt;</button>
 </div>
 
-      <script src="/js/pagination.js"></script>
+        <script src="/js/pagination.js"></script>
+      </div>
     </div>
   </div>
 </div>
